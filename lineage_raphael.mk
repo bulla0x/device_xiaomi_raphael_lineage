@@ -18,6 +18,20 @@ $(call inherit-product, device/xiaomi/raphael/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Gapps
+#TARGET_BUILD_GAPPS := true
+
+# Boot animation
+TARGET_BOOT_ANIMATION_RES := 1080
+
+# Boot animation
+scr_resolution := 1080
+TARGET_SCREEN_HEIGHT := 2400
+TARGET_SCREEN_WIDTH := 1080
+
+# Exclude QCOM powerhal manifest
+TARGET_PROVIDES_POWERHAL := true
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_raphael
 PRODUCT_DEVICE := raphael
