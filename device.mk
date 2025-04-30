@@ -205,6 +205,7 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.motor@1.0.vendor
 
 $(call soong_config_set,camera,override_format_from_reserved,true)
+$(call soong_config_set,camera,package_name,com.android.camera)
 $(call soong_config_set,libcameraservice,ext_lib,libcameraservice_extension.raphael)
 
 # MiuiCamera
