@@ -18,8 +18,9 @@ $(call inherit-product, device/xiaomi/raphael/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# Gapps
-#TARGET_BUILD_GAPPS := true
+# Flags
+TARGET_HAS_UDFPS := true
+EXTRA_UDFPS_ANIMATIONS := true
 
 # Disable EPPE for devices that don't support it
 TARGET_DISABLE_EPPE := true
